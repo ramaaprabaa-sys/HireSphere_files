@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HireSphere | Job Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">HS</span>
+        <span class="brand-name">HireSphere</span>
+      </div>
+      <nav class="topnav">
+        <a href="#overview">Overview</a>
+        <a href="#roles">Open Roles</a>
+        <a href="#apply">Apply</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Careers at HireSphere</p>
+          <h1>Your next opportunity starts here</h1>
+          <p class="hero-text">
+            Submit one application, explore multiple roles, and let our talent team connect you with the right fit.
+          </p>
+          <a class="hero-cta" href="#application-form">Apply Now</a>
+        </div>
+        <div class="hero-visual">
+          <div class="open-roles-panel">
+            <h2>Open role tracks</h2>
+            <ul>
+              <li>Engineering</li>
+              <li>Product & Design</li>
+              <li>People & Operations</li>
+              <li>Sales & Customer Success</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="application-form" class="application-section">
+        <div class="section-header">
+          <h2>Job Application</h2>
+          <p>Complete the form below and we’ll get back to you within 3 business days.</p>
+        </div>
+
+        <form class="job-form">
+          <div class="form-grid">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="Alex Johnson" required />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" placeholder="alex@example.com" required />
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" placeholder="+1 (555) 123-4567" />
+            </label>
+            <label>
+              Date of Birth
+              <input type="date" name="dob" />
+            </label>
+            <label>
+              Gender
+              <select name="gender">
+                <option value="">Select gender</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Non-binary</option>
+                <option>Prefer not to say</option>
+              </select>
+            </label>
+            <label>
+              Highest Degree
+              <input type="text" name="degree" placeholder="B.A., M.S., MBA, etc." />
+            </label>
+            <label class="full-width">
+              Roles of Interest
+              <div class="role-options">
+                <label><input type="checkbox" name="desiredRoles[]" value="Frontend Engineer" /> Frontend Engineer</label>
+                <label><input type="checkbox" name="desiredRoles[]" value="Backend Engineer" /> Backend Engineer</label>
+                <label><input type="checkbox" name="desiredRoles[]" value="Product Manager" /> Product Manager</label>
+                <label><input type="checkbox" name="desiredRoles[]" value="Recruiting Specialist" /> Recruiting Specialist</label>
+                <label><input type="checkbox" name="desiredRoles[]" value="UX Designer" /> UX Designer</label>
+              </div>
+            </label>
+            <label>
+              Preferred Start Date
+              <input type="date" name="startDate" />
+            </label>
+            <label class="full-width">
+              LinkedIn or Portfolio
+              <input type="url" name="portfolio" placeholder="https://..." />
+            </label>
+            <label class="full-width">
+              Cover Letter
+              <textarea name="coverLetter" rows="5" placeholder="Tell us why you're a great fit"></textarea>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="primary-btn">Submit Application</button>
+            <button type="reset" class="secondary-btn">Clear</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer-bar">
+      <p>&copy; 2026 HireSphere. Modern hiring, simplified.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
